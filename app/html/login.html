@@ -17,26 +17,33 @@
 
     <div class="container text-center mt-5">
         <form style=" max-width:600px; margin:auto; ">
-            <img class="mt-4 mb-4" src="/app/img/login-image.png" alt="" width="250">
+            <img class="mt-4 mb-4" src="/app/assets/img/login-image.png" alt="" width="250">
             <h1 class="h3 mb-4 display-4">Cuenta de Administrador</h1>
 
             <label class="sr-only mb-2" for="cuentaAdmin">Cuenta</label>
-            <input type="text" id="cuentaAdmin" class="form-control" placeholder="Nombre de cuenta" required autofocus>
+            <input type="text" id="cuentaAdmin" class="form-control" placeholder="Nombre de cuenta"  autofocus>
 
             <label class="sr-only mt-4" for="passwordAdmin">Contraseña</label>
-            <input type="password" id="passwordAdmin" class="form-control" placeholder="Ingresar contraseña" required autofocus>
+            <input type="password" id="passwordAdmin" class="form-control" placeholder="Ingresar contraseña"  autofocus>
 
             <div class="d-grid gap-2 mx-auto mt-4">
-                <a class="btn btn-primary btn-lg" href="/app/dashboard/historial.html" role="button">Iniciar sesión</a>
-                <a class="btn btn-success btn-lg" href="#" role="button">Regresar</a>
+                <button type="submit" onclick='return iniciarSesion();' class="btn btn-primary btn-lg">Iniciar sesión</button>
+                <a class="btn btn-success btn-lg" href="inicio.html" role="button">Regresar</a>
             </div>
         </form>
+
+        <div id="error" class="mt-3">
+
+        </div>
     </div>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+    <!-- Validación del formulario  -->
+    <script src="login.js"></script>
 </body>
 
 </html>

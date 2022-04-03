@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra Finalizada</title>
+</head>
+
+<body>
+    <!--------------BARRA DE NAVEGACION----------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+      <div class="container m-2">
+          <a class="navbar-brand">
+            <img src="/app/assets/img/logo.PNG"  width="350" height="100" alt="IMG">
+          </a> 
+
+          <li class="nav-item">
+            <a class="nav-link" href="/app/html/orden.html">Nueva Venta</a>
+          </li>
+          
+        </div>
+       
+    </nav>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center"> 
+          <li class="page-item"><a class="page-link" href="#">-1--ORDEN--</a></li>
+          <li  class="page-item"><a class="page-link" href="#">-2--PAGO--</a></li>
+          <li class="page-item active"><a class="page-link" href="#">-3--TICKET--</a></li>
+        </ul>
+    </nav>
+
+    <div class="col d-flex justify-content-center">
+      <div class="card" style="width: 18rem;" >
+          <div class="card-body justify-content-lg-center">
+                <h4 class="card-title">Desea su ticket </h4> 
+          </div>
+      </div>
+      <!----BOTON DE TICKET-----> 
+      <div class="d-grid gap-2 d-md-flex justify-content-around">
+          <button type="button" class="btn btn-danger">Ticket impreso</button>
+      </div>     
+    </div>
+
+
+    <!----------SCRIPTS-------->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+
+</body>
+</html>

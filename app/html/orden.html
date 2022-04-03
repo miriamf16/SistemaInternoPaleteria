@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orden</title>
+</head>
+
+<body>
+    <!--------------BARRA DE NAVEGACION PRINCIPAL----------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+      <div class="container m-2">
+          <a class="navbar-brand">
+            <img src="/app/assets/img/logo.PNG"  width="350" height="100" alt="IMG">
+          </a> 
+        </div>
+       
+    </nav>
+
+    <!---------BARRA DE NAVEGACION DE LA ORDEN------->
+    <ul class="pagination justify-content-center m-3">
+      <li  class="page-item active"><a class="page-link" href="#">-1--ORDEN--</a></li>
+      <li class="page-item"><a class="page-link" href="#">-2--PAGO--</a></li>
+      <li class="page-item"><a class="page-link" href="#">-3--TICKET--</a></li>
+    </ul>
+      
+    <div class="container">
+      <div class="row">
+        <div class="col">
+            
+            <!-------Lista de productos--------->
+              <h5 class="card-title" style="text-align: center;" >PRODUCTOS</h5>
+            <div class="list-group" id="list" >
+              <a class="list-group-item list-group-item-action" style="text-align: center;" >Paletas</a>
+              <a class="list-group-item list-group-item-action" style="text-align: center;" >Nieve</a>
+              <a class="list-group-item list-group-item-action" style="text-align: center;">Comida</a>
+              <a class="list-group-item list-group-item-action" style="text-align: center;">Bebidas</a>
+            </div>
+
+            <form id = "form" method="post">
+              <input type="number" name = "cantidad" id="cantidad"
+                  min="1"
+                  max="30"
+                autocomplete="off"
+                required>
+
+              <button onclick="getCantidad()">Agregar</button> 
+            </form>
+
+          </div>
+          <div class="col">
+            <h5 class="card-title" style="text-align: center;">ORDEN</h5>
+
+            <ol class="list-group list-group-numbered" id="lista">
+              <li class="list-group-item">item </li>
+              <li class="list-group-item">item</li>
+              <li class="list-group-item">item</li>
+            </ol>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a role="button" class="btn btn-danger" href="/app/html/pago.html">Pagar</a>
+            </div>
+          </div>
+
+      </div>
+
+      <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script defer src="/app/validaciones.js"></script>
+</body>
+</html>
