@@ -1,0 +1,61 @@
+{{#if inventario}}
+    
+<div class="container editorVenta">
+
+    <form action="/inventario/editar/{{inventario._id}}" method="POST">
+        
+        <div class="row">
+            <div class="col-md-4">
+                <h4 class="mt-4 mb-3">Vaso de nieve</h4>
+                <label class="sr-only" for="vasoChico">Chico</label>
+                <input type="number" value={{inventario.vasoNieveChico}} id="vasoChico" name="vasoNieveChico" class="form-control estilo-input" placeholder="cantidad" min="0" max="500" autofocus>
+                <label class="sr-only" for="vasoMediano">Mediano</label>
+                <input type="number" value={{inventario.vasoNieveMediano}} id="vasoMediano" name="vasoNieveMediano" class="form-control estilo-input" placeholder="cantidad" min="0" max="500" autofocus>
+                <label class="sr-only" for="vasoGrande">Grande</label>
+                <input type="number" value={{inventario.vasoNieveGrande}} id="vasoGrande" name="vasoNieveGrande" class="form-control estilo-input" placeholder="cantidad" min="0" max="500" autofocus>
+            </div>
+            <div class="col-md-4">
+                <h4 class="mt-4 mb-3">Cono de nieve</h4>
+                <label class="sr-only" for="conoChico">Chico</label>
+                <input type="number" value={{inventario.conoChico}} id="conoChico" name="conoChico" class="form-control estilo-input" placeholder="cantidad" min="0" max="500" autofocus>
+                <label class="sr-only" for="conoMediano">Mediano</label>
+                <input type="number" value={{inventario.conoMediano}} id="conoMediano" name="conoMediano" class="form-control estilo-input" placeholder="cantidad" min="0" max="500" autofocus>
+                <label class="sr-only" for="conoGrande">Grande</label>
+                <input type="number" value={{inventario.conoGrande}} id="conoGrande" name="conoGrande" class="form-control estilo-input" placeholder="cantidad" min="0" max="500" autofocus>
+            </div>
+            <div class="col-md-4">
+                <h4 class="mt-4 mb-3">Vaso de agua</h4>
+                <label class="sr-only" for="aguaChica">Chica</label>
+                <input type="number" value={{inventario.vasoAguaChico}} id="aguaChica" name="vasoAguaChico" class="form-control estilo-input" placeholder="cantidad" min="0" max="500" autofocus>
+                <label class="sr-only" for="aguaMediana">Mediana</label>
+                <input type="number" value={{inventario.vasoAguaMediana}} id="aguaMediana" name="vasoAguaMediana" class="form-control estilo-input" placeholder="cantidad" min="0" max="500" autofocus>
+                <label class="sr-only" for="aguaGrande">Grande</label>
+                <input type="number" value={{inventario.vasoAguaGrande}} id="aguaGrande" name="vasoAguaGrande" class="form-control estilo-input" placeholder="cantidad" min="0" max="500" autofocus>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mt-5">
+                <h4 class="mt-4 mb-3">Bandeja para ensaladas</h4>
+                <label class="sr-only" for="ensaladaChica">Chica</label>
+                <input type="number" value={{inventario.bandejaChica}} id="ensaladaChica" name="bandejaChica" class="form-control estilo-input" placeholder="cantidad" min="0" max="500" autofocus>
+                <label class="sr-only" for="ensaladaGrande">Grande</label>
+                <input type="number" value={{inventario.bandejaGrande}} id="ensaladaGrande" name="bandejaGrande" class="form-control estilo-input" placeholder="cantidad" min="0" max="500" autofocus>
+            </div>
+            <div class="col-md-4 mt-5">
+                <h4 class="mt-4 mb-3">Plato para nachos</h4>
+                <input type="number" value={{inventario.platoNachos}} id="nachos" name="platoNachos" class="form-control estilo-input mt-4" placeholder="cantidad" min="0" max="500" autofocus>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col">
+                <button type="submit" class="btn btn-lg btn-success boton">Confirmar</button>
+            </div>
+        </div>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}" />
+    </form>
+
+</div>
+
+{{/if}}

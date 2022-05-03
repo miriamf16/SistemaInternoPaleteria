@@ -1,0 +1,38 @@
+
+.venta .fondo{
+    background-color: #00aeff;
+}
+
+.venta .titulo-producto{
+    margin-left: 280px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.venta .titulo-orden{
+    margin-left: 140px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.venta .estilo-imagen{
+    width: 200px;
+    height: 300px;  
+}
+
+.venta .estilo-input{
+    width: 200px;
+}
+
+.venta .estilo-orden{
+    height: 485px;
+}
+
+.venta textarea {
+  resize: none;
+}
+
+.venta .boton{
+    margin-top: 20px;
+    margin-left: 140px;
+}

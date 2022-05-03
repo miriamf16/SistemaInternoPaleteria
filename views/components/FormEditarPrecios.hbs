@@ -1,0 +1,68 @@
+{{#if listaPrecios}}
+    
+<div class="container editorVenta">
+
+    <form action="/precios/editar/{{listaPrecios._id}}" method="POST">
+        
+        <div class="row">
+            <div class="col-md-4">
+                <h4 class="mt-4 mb-3">Vaso de nieve</h4>
+                <label class="sr-only" for="vasoChico">Chico</label>
+                <input type="number" value={{listaPrecios.precio_vasoChico}} id="vasoChico" name="precio_vasoChico" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                <label class="sr-only" for="vasoMediano">Mediano</label>
+                <input type="number" value={{listaPrecios.precio_vasoMediano}} id="vasoMediano" name="precio_vasoMediano" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                <label class="sr-only" for="vasoGrande">Grande</label>
+                <input type="number" value={{listaPrecios.precio_vasoGrande}} id="vasoGrande" name="precio_vasoGrande" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+            </div>
+            <div class="col-md-4">
+                <h4 class="mt-4 mb-3">Cono de nieve</h4>
+                <label class="sr-only" for="conoChico">Chico</label>
+                <input type="number" value={{listaPrecios.precio_conoChico}} id="conoChico" name="precio_conoChico" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                <label class="sr-only" for="conoMediano">Mediano</label>
+                <input type="number" value={{listaPrecios.precio_conoMediano}} id="conoMediano" name="precio_conoMediano" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                <label class="sr-only" for="conoGrande">Grande</label>
+                <input type="number" value={{listaPrecios.precio_conoGrande}} id="conoGrande" name="precio_conoGrande" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+            </div>
+            <div class="col-md-4">
+                <h4 class="mt-4 mb-3">Agua</h4>
+                <label class="sr-only" for="aguaChica">Chica</label>
+                <input type="number" value={{listaPrecios.precio_aguaChica}} id="aguaChica" name="precio_aguaChica" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                <label class="sr-only" for="aguaMediana">Mediana</label>
+                <input type="number" value={{listaPrecios.precio_aguaMediana}} id="aguaMediana" name="precio_aguaMediana" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                <label class="sr-only" for="aguaGrande">Grande</label>
+                <input type="number" value={{listaPrecios.precio_aguaGrande}} id="aguaGrande" name="precio_aguaGrande" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mt-5">
+                <h4 class="mt-4 mb-3">Ensaladas</h4>
+                <label class="sr-only" for="ensaladaChica">Chica</label>
+                <input type="number" value={{listaPrecios.precio_ensaladaChica}} id="ensaladaChica" name="precio_ensaladaChica" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                <label class="sr-only" for="ensaladaGrande">Grande</label>
+                <input type="number" value={{listaPrecios.precio_ensaladaGrande}} id="ensaladaGrande" name="precio_ensaladaGrande" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+            </div>
+            <div class="col-md-4 mt-5">
+                <h4 class="mt-4 mb-3">Paletas</h4>
+                <label class="sr-only" for="paletaAgua">Agua</label>
+                <input type="number" value={{listaPrecios.precio_paletaAgua}} id="paletaAgua" name="precio_paletaAgua" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                <label class="sr-only" for="paletaLeche">Leche</label>
+                <input type="number" value={{listaPrecios.precio_paletaLeche}} id="paletaLeche" name="precio_paletaLeche" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+            </div>
+            <div class="col-md-4 mt-5">
+                <h4 class="mt-4 mb-3">Nachos</h4>
+                <input type="number" value={{listaPrecios.precio_nachos}} id="nachos" name="precio_nachos" class="form-control estilo-input mt-4" placeholder="cantidad" min="0" max="20" autofocus>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col">
+                <button type="submit" class="btn btn-lg btn-success boton">Confirmar</button>
+            </div>
+        </div>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}" />
+    </form>
+
+</div>
+
+{{/if}}

@@ -1,0 +1,10 @@
+.alert{
+    margin-top: 20px;
+    height: 50px;
+    width: 700px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:palevioletred;
+    font-weight: bold;
+}
