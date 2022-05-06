@@ -1,0 +1,7 @@
+<h1 style="text-align: center;">Proceso de pago </h1>
+
+    {{#each ultimaVenta}}
+        {{> CardPrecios}}
+    {{/each}}
+
+<input type="hidden" name="_csrf" value="{{csrfToken}}" />

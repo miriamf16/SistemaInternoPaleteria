@@ -2,40 +2,41 @@
 <div class="container venta mb-5">
 
     <form action="nuevaVenta" method="POST">
-        <div class="row">
-
-            <div class="col-md-8">
-                <h1 class="titulo-producto">PRODUCTOS</h1>
+       <input type="hidden" name="_csrf" value="{{csrfToken}}" />
+        <h1 style="text-align: center;" class="titulo-producto">PRODUCTOS</h1>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                 <button type="submit" class="btn btn-lg btn-success boton ">Realizar venta</button>
+            </div>
                 <div class="row">
                     <div class="col-md-4">
                         <img src="/img/productos/nieve.png" class="estilo-imagen img-thumbnail" alt="">
                         <br>
                         <label class="sr-only" for="vasoChico">Chico</label>
-                        <input type="number" id="vasoChico" name="vasoChico" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                        <input type="number" id="vasoChico" name="vasoC" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
                         <label class="sr-only" for="vasoMediano">Mediano</label>
-                        <input type="number" id="vasoMediano" name="vasoMediano" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                        <input type="number" id="vasoMediano" name="vasoM" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
                         <label class="sr-only" for="vasoGrande">Grande</label>
-                        <input type="number" id="vasoGrande" name="vasoGrande" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                        <input type="number" id="vasoGrande" name="vasoG" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
                     </div>
                     <div class="col-md-4">
                         <img src="/img/productos/cono.png" class="estilo-imagen img-thumbnail" alt="">
                         <br>
                         <label class="sr-only" for="conoChico">Chico</label>
-                        <input type="number" id="conoChico" name="conoChico" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                        <input type="number" id="conoChico" name="conoC" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
                         <label class="sr-only" for="conoMediano">Mediano</label>
-                        <input type="number" id="conoMediano" name="conoMediano" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                        <input type="number" id="conoMediano" name="conoM" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
                         <label class="sr-only" for="conoGrande">Grande</label>
-                        <input type="number" id="conoGrande" name="conoGrande" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                        <input type="number" id="conoGrande" name="conoG" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
                     </div>
                     <div class="col-md-4">
                         <img src="/img/productos/agua.png" class="estilo-imagen img-thumbnail" alt="">
                         <br>
                         <label class="sr-only" for="aguaChica">Chica</label>
-                        <input type="number" id="aguaChica" name="aguaChica" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                        <input type="number" id="aguaChica" name="aguaC" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
                         <label class="sr-only" for="aguaMediana">Mediana</label>
-                        <input type="number" id="aguaMediana" name="aguaMediana" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                        <input type="number" id="aguaMediana" name="aguaM" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
                         <label class="sr-only" for="aguaGrande">Grande</label>
-                        <input type="number" id="aguaGrande" name="aguaGrande" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                        <input type="number" id="aguaGrande" name="aguaG" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
                     </div>
                 </div>
 
@@ -44,33 +45,23 @@
                         <img src="/img/productos/ensalada.png" class="estilo-imagen img-thumbnail" alt="">
                         <br>
                         <label class="sr-only" for="ensaladaChica">Chica</label>
-                        <input type="number" id="ensaladaChica" name="ensaladaChica" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                        <input type="number" id="ensaladaChica" name="ensaladaC" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
                         <label class="sr-only" for="ensaladaGrande">Grande</label>
-                        <input type="number" id="ensaladaGrande" name="ensaladaGrande" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                        <input type="number" id="ensaladaGrande" name="ensaladaG" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
                     </div>
                     <div class="col-md-4">
                         <img src="/img/productos/paleta.png" class="estilo-imagen img-thumbnail" alt="">
                         <br>
                         <label class="sr-only" for="paletaAgua">Agua</label>
-                        <input type="number" id="paletaAgua" name="paletaAgua" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                        <input type="number" id="paletaAgua" name="paletaA" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
                         <label class="sr-only" for="paletaLeche">Leche</label>
-                        <input type="number" id="paletaLeche" name="paletaLeche" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
+                        <input type="number" id="paletaLeche" name="paletaL" class="form-control estilo-input" placeholder="cantidad" min="0" max="50" autofocus>
                     </div>
                     <div class="col-md-4">
                         <img src="/img/productos/nachos.png" class="estilo-imagen img-thumbnail" alt="">
                         <br>
                         <input type="number" id="nachos" name="nachos" class="form-control estilo-input mt-4" placeholder="cantidad" min="0" max="20" autofocus>
                     </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <h1 class="titulo-orden">ORDEN</h1>
-                <textarea class="form-control estilo-orden" id="listaOrdenProductos" readonly></textarea>
-                <button type="submit" class="btn btn-lg btn-success boton">Realizar venta</button>
-            </div>
-            
-        </div>
+                </div>   
     </form>
-
 </div>

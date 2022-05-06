@@ -41,8 +41,6 @@ const hbs = create({
 app.engine(".hbs", hbs.engine);
 app.set("view engine", ".hbs");
 app.set("views", "./views");
-
-
 app.use(express.static(__dirname + "/public"));
 app.use(express.urlencoded({extended: true}));
 
@@ -61,7 +59,7 @@ app.use("/nuevaVenta",require('./routes/nuevaVenta'));
 app.use("/registroVentas",require('./routes/registroVentas'));
 app.use("/inventario",require('./routes/inventario'));
 app.use("/precios",require('./routes/precios'));
-
+app.use("/pago",require('./routes/procesopago'));
 
 const PORT = process.env.PORT || 5000;
 

@@ -23,6 +23,7 @@ const registerUser = async(req,res) =>{
        if(user) throw new Error("ya existe usuario");
         user = new User({userName ,email ,password , tokenConfirm: nanoid()});
         await user.save();
+       // res.json(user);
 
         //enviar correo electronico al usuario 
         const transport = nodemailer.createTransport({

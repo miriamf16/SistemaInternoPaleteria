@@ -3,19 +3,19 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const ventaSchema = new Schema({
-    vasoChico: Number,
-    vasoMediano: Number,
-    vasoGrande: Number,
-    conoChico: Number,
-    conoMediano: Number,
-    conoGrande: Number,
-    aguaChica: Number,
-    aguaMediana: Number,
-    aguaGrande: Number,
-    ensaladaChica: Number,
-    ensaladaGrande: Number,
-    paletaAgua: Number,
-    paletaLeche: Number,
+    vasoC: Number,
+    vasoM: Number,
+    vasoG: Number,
+    conoC: Number,
+    conoM: Number,
+    conoG: Number,
+    aguaC: Number,
+    aguaM: Number,
+    aguaG: Number,
+    ensaladaC: Number,
+    ensaladaG: Number,
+    paletaA: Number,
+    paletaL: Number,
     nachos: Number,
 });
 
