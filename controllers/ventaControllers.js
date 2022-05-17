@@ -20,7 +20,7 @@ const mostrarPagina = (req, res) => {
     else{
         await venta.save((function (_id) {
              return function () { 
-                 console.log(_id); //
+                 console.log(_id); 
              };
             })(venta._id));
         
