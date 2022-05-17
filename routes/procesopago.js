@@ -1,9 +1,9 @@
 
 const express = require('express');
-const {mostrarPagina} = require('../controllers/pagoControllers');
+const {mostrarPagina,agregarVenta} = require('../controllers/pagoControllers');
 const router = express.Router();
 
 router.get('/', mostrarPagina);
-//router.post('/',agregarVenta);
+router.post('/:id',agregarVenta);
 
 module.exports = router;

@@ -13,21 +13,47 @@
     <link rel="stylesheet" href="/css/alert.css">
     <title>Inicio</title>
 </head>
-<body>
+<body class="">
 
     {{>Navbar}}
 
-    <div class="">
+    <div class="mb-5">
 
         {{#each mensajes}}
                  <div class="alert alert-dark mb-2">{{this.msg}}</div>
         {{/each}}
 
         {{{body}}}
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="/js/app.js"></script>
     <script src="/js/login.js"></script>
+
 </body>
+
+<footer class="pie-pagina">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5 class="mt-2">Contacto</h5>
+                <p><b>Num.Telefonico:</b> 664-528-3370</p>
+                <p><b>Correo:</b> a1253534@uabc.edu.mx</p>
+            </div>
+            <div class="col-md-4">
+                <h5 class="mt-2">Ubicación</h5>
+                <p> C. Constitución y C. 18 de Marzo, Florido, <br> Tijuana,Baja California</p>
+            </div>
+            <div class="col-md-4">
+                <h5 class="mt-2">Acerca de nosotros:</h5>
+                <p> Paleteria 100% originaria de Tocumbo, Michoacán con más de 20 años de experiencia en producción y venta de los productos.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </html>

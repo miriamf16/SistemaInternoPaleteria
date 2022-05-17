@@ -3,12 +3,11 @@
 
     <form action="nuevaVenta" method="POST">
        <input type="hidden" name="_csrf" value="{{csrfToken}}" />
-        <h1 style="text-align: center;" class="titulo-producto">PRODUCTOS</h1>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                 <button type="submit" class="btn btn-lg btn-success boton ">Realizar venta</button>
-            </div>
-                <div class="row">
-                    <div class="col-md-4">
+        <h1 class="titulo-producto">PRODUCTOS</h1>
+        <div class="row">
+            <div class="container col-md-10">
+                <div class="row cantidad-productos">
+                    <div class="col-md-4 ">
                         <img src="/img/productos/nieve.png" class="estilo-imagen img-thumbnail" alt="">
                         <br>
                         <label class="sr-only" for="vasoChico">Chico</label>
@@ -40,7 +39,7 @@
                     </div>
                 </div>
 
-                <div class="row mt-5">
+                <div class="row mt-5 cantidad-productos">
                     <div class="col-md-4">
                         <img src="/img/productos/ensalada.png" class="estilo-imagen img-thumbnail" alt="">
                         <br>
@@ -63,5 +62,12 @@
                         <input type="number" id="nachos" name="nachos" class="form-control estilo-input mt-4" placeholder="cantidad" min="0" max="20" autofocus>
                     </div>
                 </div>   
+            </div>
+            <div class="col-md-2">
+                <div class="container">
+                    <button type="submit" class="btn btn-lg btn-success boton">Realizar venta</button>
+                </div>
+            </div>
+        </div>
     </form>
 </div>

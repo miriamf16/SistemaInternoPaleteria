@@ -4,21 +4,21 @@
 }
 
 .venta .titulo-producto{
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-.venta .titulo-orden{
-    margin-left: 140px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+.venta .cantidad-productos{
+    margin-left: 122px;
 }
 
 .venta .estilo-imagen{
-    width: 200px;
-    height: 300px;  
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;  
 }
 
 .venta .estilo-input{
@@ -34,6 +34,5 @@
 }
 
 .venta .boton{
-    margin-top: 20px;
-    margin-left: 140px;
+    margin-top: 200px;
 }

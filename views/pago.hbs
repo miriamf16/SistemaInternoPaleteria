@@ -1,7 +1,14 @@
 <h1 style="text-align: center;">Proceso de pago </h1>
 
-    {{#each ultimaVenta}}
-        {{> CardPrecios}}
+
+   <div class="container">
+
+    <h1 class="mt-4 mb-4">Venta Realizada</h1>
+
+    {{#each listaVenta}}
+        {{> CardVenta}}
     {{/each}}
+
+</div>    
 
 <input type="hidden" name="_csrf" value="{{csrfToken}}" />

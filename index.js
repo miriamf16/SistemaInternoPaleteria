@@ -60,6 +60,7 @@ app.use("/registroVentas",require('./routes/registroVentas'));
 app.use("/inventario",require('./routes/inventario'));
 app.use("/precios",require('./routes/precios'));
 app.use("/pago",require('./routes/procesopago'));
+app.use("/mapa",require('./routes/mapaSitio'));
 
 const PORT = process.env.PORT || 5000;
 

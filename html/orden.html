@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orden</title>
+</head>
+
+<body>
+    <!--------------BARRA DE NAVEGACION----------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between"> 
+      <img src="/app/img/logo.PNG"  width="500" height="100" alt="IMG">
+        <div class="container-fluid">  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+              <li class="nav-item">
+                <a class="nav-link disabled" class="" href="#" tabindex="-1" aria-disabled="true">Cerrar Sesión </a>
+              </li>
+            </ul>  
+          </div>
+        </div>
+      </nav>
+
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          
+          <li  class="page-item active"><a class="page-link" href="#">-1--ORDEN--</a></li>
+          <li class="page-item"><a class="page-link" href="#">-2--PAGO--</a></li>
+          <li class="page-item"><a class="page-link" href="#">-3--TICKET--</a></li>
+          
+        </ul>
+      </nav>
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            
+            <!-------Lista de productos--------->
+            <h5 class="card-title" style="text-align: center;" >PRODUCTOS</h5>
+            <ul class="list-group"  >
+              <li class="list-group-item active" aria-current="true" style="text-align: center;">Paletas</li>
+              <li class="list-group-item" style="text-align: center;">Nieve</li>
+              <li class="list-group-item" style="text-align: center;">Comida</li>
+              <li class="list-group-item" style="text-align: center;">Bebidas</li>
+            </ul>
+
+            <div class="input-group">
+              <div class="input-group-text" id="btn">Agregar</div>
+              <input type="text" class="form-control" placeholder="Cantidad ( numero ) "aria-label="Cantidad ( numero ) " aria-describedby="btn">
+            </div>
+
+          </div>
+          <div class="col">
+            <h5 class="card-title" style="text-align: center;">ORDEN</h5>
+
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item">item </li>
+              <li class="list-group-item">item</li>
+              <li class="list-group-item">item</li>
+            </ol>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="button" class="btn btn-danger">Pagar</button>
+            </div>
+          </div>
+
+
+      </div>
+</body>
+</html>

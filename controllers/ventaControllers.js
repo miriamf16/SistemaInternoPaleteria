@@ -1,5 +1,6 @@
 
 const Venta = require('../models/Venta');
+const ObjectId = require('mongodb').ObjectId;
 
 const mostrarPagina = (req, res) => {
     res.render('venta');
@@ -17,8 +18,20 @@ const mostrarPagina = (req, res) => {
           res.redirect('/nuevaVenta'); 
     }      
     else{
-        await venta.save();
-        res.redirect('/pago'); 
+        await venta.save((function (_id) {
+             return function () { 
+                 console.log(_id); //
+             };
+            })(venta._id));
+        
+        var id = venta._id ;
+        var o_id = new ObjectId(id);
+        console.log(o_id);
+
+        const listaVenta = await Venta.find({"_id":o_id}).lean();
+            res.render('pago',{listaVenta: listaVenta});
+            
+       // res.redirect('/pago'); 
     }
                    
     } catch (error) {
