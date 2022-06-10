@@ -17,6 +17,7 @@ const ventaSchema = new Schema({
     paletaA: Number,
     paletaL: Number,
     nachos: Number,
+    total:Number,
 });
 
 const Venta = mongoose.model("Ventas", ventaSchema);
